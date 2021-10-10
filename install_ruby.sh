@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if ! [ -x "$(command -v ruby)" ] || ! [ -x "$(command -v bundler)" ] ; then
-  echo '[Error]: ruby or bundler are not installed.' >&2
+  echo '[INFO]: ruby or bundler are not installed.' >&2
   sudo apt update
   sudo apt install -y ruby-full ruby-bundler build-essential
   exit 1

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if ! [ -x "$(command -v mongod)" ]; then
-  echo '[Error]: MONGODB is not installed.' >&2
+  echo '[INFO]: MONGODB is not installed.' >&2
 
   cd /tmp
   wget -qO - https://www.mongodb.org/static/pgp/server-4.2.asc | sudo apt-key add -
