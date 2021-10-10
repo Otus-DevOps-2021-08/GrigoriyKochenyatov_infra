@@ -16,8 +16,8 @@
     bastion_IP = 62.84.123.28
     someinternalhost_IP = 10.129.0.26
 
-   testapp_IP = 84.201.157.181
-   testapp_port = 9292
+    testapp_IP = 84.201.157.181
+    testapp_port = 9292
 
 
 ## Как проверить работоспособность:
