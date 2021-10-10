@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if ! [ -x "$(command -v mongod)" ]; then
+#if ! [ -x "$(command -v mongod)" ]; then
   echo '[INFO]: MONGODB is not installed.' >&2
 
   cd /tmp
@@ -10,11 +10,14 @@ if ! [ -x "$(command -v mongod)" ]; then
   sudo apt-get install -y mongodb-org
   sudo systemctl start mongod
   sudo systemctl enable mongod
+  sudo systemctl status mongod
 
-  exit 1
-else
-  echo "[OK]: MONGODB is already installed" >&2
-fi
+
+
+#  exit 1
+#else
+#  echo "[OK]: MONGODB is already installed" >&2
+#fi
 
 
 
