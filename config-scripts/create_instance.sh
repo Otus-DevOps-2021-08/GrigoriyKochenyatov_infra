@@ -1,6 +1,6 @@
 #!/bin/bash
 
-remote_host="84.201.157.181"
+remote_host="62.84.119.253"
 
 #yc compute instance create \
 # --name reddit-app \
@@ -15,5 +15,5 @@ scp 'install_ruby.sh' yc-user@$remote_host:'/home/yc-user/install_ruby.sh'
 scp 'install_mongodb.sh' yc-user@$remote_host:'/home/yc-user/install_mongodb.sh'
 scp 'deploy.sh' yc-user@$remote_host:'/home/yc-user/deploy.sh'
 ssh yc-user@$remote_host '/home/yc-user/install_ruby.sh' 
-ssh yc-user@$remote_host '/home/yc-user/install_mongodb.sh'
-ssh yc-user@$remote_host '/home/yc-user/deploy.sh'
+#ssh yc-user@$remote_host '/home/yc-user/install_mongodb.sh'
+#ssh yc-user@$remote_host '/home/yc-user/deploy.sh'
