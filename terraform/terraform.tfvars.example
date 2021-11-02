@@ -1,0 +1,10 @@
+cloud_id = "cloudidexample"
+folder_id = "folderidexample"
+image_id = "imageidexample"
+public_key_path = "~/.ssh/yourfile.pub"
+private_key_path = "~/.ssh/yourfile"
+service_account_key_file = "terraform-key.json"
+zone = "ru-central1-b"
+subnet_id = "subnetidexample"
+nat_ip_address = "8.8.8.8"
+
