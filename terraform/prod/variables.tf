@@ -4,13 +4,11 @@ variable cloud_id {
 variable folder_id {
   description = "Folder"
 }
-
 variable zone {
   description = "Zone"
   # Значение по умолчанию
-  default = "ru-central1-b"
+  default = "ru-central1-a"
 }
-
 variable public_key_path {
   description = "Path to the public key used for ssh access"
 }
@@ -28,6 +26,16 @@ variable image_id {
 variable subnet_id {
   description = "Subnet"
 }
-variable nat_ip_address {
-  description = "External reserved IP for NAT"
+#variable nat_ip_address {
+#  description = "External reserved IP for NAT"
+#}
+
+
+variable app_disk_image {
+  description = "Disk image for reddit app"
+  default     = "reddit-app-base"
+}
+variable db_disk_image {
+  description = "Disk image for reddit db"
+  default     = "reddit-db-base"
 }
