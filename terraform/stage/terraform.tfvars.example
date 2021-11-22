@@ -1,0 +1,15 @@
+cloud_id  = "yandex_cloud_id"
+folder_id = "yandex_folder_id"
+image_id  = "yandex_image_id"
+
+public_key_path          = "~/.ssh/id_rsa.pub"
+private_key_path         = "~/.ssh/id_rsa"
+service_account_key_file = "../../../secrets/terraform-key.json"
+zone                     = "ypur-zone-here"
+
+subnet_id = "yandex_subnet_id"
+#nat_ip_address = "178.154.193.116"
+
+app_disk_image = "your_appdisk_image"
+db_disk_image  = "your_dbdisk_image"
+
