@@ -17,10 +17,12 @@ resource "yandex_compute_instance" "app" {
 
   network_interface {
     subnet_id = var.subnet_id
-    nat = true
+    nat       = true
   }
 
   metadata = {
-    ssh-keys = "appuser:${file(var.public_key_path)}"
+    #ssh-keys = "ubuntu:${file(var.public_key_path)}"
+    user-data          = file("${var.user_meta_path}")
+    serial-port-enable = 1
   }
 }

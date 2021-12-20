@@ -16,15 +16,9 @@
     ],
     "provisioners": [
         {
-            "type": "shell",
-            "script": "scripts/install_updates.sh",
-            "execute_command": "sudo {{.Path}}",
-            "pause_after": "30s"
-        },
-        {
-            "type": "shell",
-            "script": "scripts/install_ruby.sh",
-            "execute_command": "sudo {{.Path}}"
+            "type": "ansible",
+            "user": "ubuntu",
+            "playbook_file": "../ansible/packer_app.yml"
         }
     ]
 
