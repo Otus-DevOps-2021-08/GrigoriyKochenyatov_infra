@@ -19,6 +19,9 @@ variable service_account_key_file {
   description = "Path to the yandex service-key file"
 }
 
+variable user_meta_path {
+  description = "Path to the user.meta"
+}
 
 variable image_id {
   description = "Disk image"
