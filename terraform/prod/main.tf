@@ -7,16 +7,18 @@ provider "yandex" {
 
 
 module "app" {
-  source          = "../modules/app"
+  user_meta_path  = var.user_meta_path
   public_key_path = var.public_key_path
-  app_disk_image  = var.app_disk_image
-  subnet_id       = var.subnet_id
+
+  source         = "../modules/app"
+  app_disk_image = var.app_disk_image
+  subnet_id      = var.subnet_id
 }
 module "db" {
-  source          = "../modules/db"
+  user_meta_path  = var.user_meta_path
   public_key_path = var.public_key_path
-  db_disk_image   = var.db_disk_image
-  subnet_id       = var.subnet_id
+
+  source        = "../modules/db"
+  db_disk_image = var.db_disk_image
+  subnet_id     = var.subnet_id
 }
-
-

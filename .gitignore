@@ -11,3 +11,6 @@ variables.json
 meta.stage.yml
 
 *.pem
+
+jdauphant.nginx
+vault.key

@@ -1,0 +1,8 @@
+#cloud-config
+users:
+  - name: appuser
+    groups: sudo
+    shell: /bin/bash
+    sudo: ["ALL=(ALL) NOPASSWD:ALL"]
+    ssh_authorized_keys:
+      - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC8yALb9TmlSbTH8mX0wUQDGst5BZXejGlIVseBLFuwD+e/sKZnF7mctSRii5LGEmMt4UbO8CfVNGe4oERFbgxaqnug2Fjcl4H+gVPZJr6aLg5zSkMvEeVrzwAzqNcUh/r1b2MJNeIcCRsyjIe+8/0UXUCpDLSakj8hChW+jElkDFw18CnkgCt0jumLWdXwC3/GnZPE5+kA2AW5pDaewk8k7Qqa6X+kXDrRZmvBhTqau4fdCR6HfE/SXJA4SCv/kL03txG5hu9U5grRXl3fU1m1kcf0CNzHq2S1b3FA94p4LF79+lzvCszoyoPptM7qG5a9GPQzfqb47CK6HpwIOQlGYZJYyclfypUnhFKGL7dc+q7VPYZVeA/PKLmYO7DwgsNJIxXbwnd6/W4tp0usb7KIDKQQcJ7H8W0JIe2ld9evH42FBJ4m1SeyeqpGQIcIE7JBdZ93OrjLqimy0Vq8/byywfM8C25Nb1f3PWy+/9+gcmAW199G2iPJ+auNfCo4LY90HEdqIBgcGX32cIz2WjufyU8JI2cwdWzkAgmGHv3Eu0pLVelnrP+8wrRFB8VkG9dgVYI3EsuNqnIrN4wuGMVjUbuiu8SGHFwTbLdZIzFn/4Cb8rlA9fe/Urp++AB5voKmW1fBRoJ7DgPI9UCFym6ZkcX6oWORMTLRmu9bDGAg1w== g.kochenyatov@gmail.com"
