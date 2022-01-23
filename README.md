@@ -1,2 +1,8 @@
-# GrigoriyKochenyatov_infra
-GrigoriyKochenyatov Infra repository
+## В процессе сделано:
+ - Выполнено до п. molecule verify
+ 
+
+
+## PR checklist
+ - [ ] Выставил label с номером домашнего задания
+ - [ ] Выставил label с темой домашнего задания

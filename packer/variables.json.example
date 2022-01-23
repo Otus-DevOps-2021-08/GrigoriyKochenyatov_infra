@@ -1,0 +1,8 @@
+{
+        "service_account_key_file": "packer/key.json.example",
+        "folder_id": "folder id",
+        "source_image_family": "ubuntu image version",
+        "preemptible": "true",
+        "instance_cores": "2"
+}
+
